@@ -1,8 +1,8 @@
 FROM pataquets/ubuntu
 
-RUN DEBIAN_FRONTEND=noninteractive \
+RUN \
 	apt-get update && \
-        apt-get -y install \
-                default-jre-headless \
-        && \
-        apt-get clean
+	DEBIAN_FRONTEND=noninteractive \
+		apt-get -y install default-jre-headless \
+	&& \
+	apt-get clean
