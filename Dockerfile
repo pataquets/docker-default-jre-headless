@@ -5,4 +5,5 @@ RUN \
 	DEBIAN_FRONTEND=noninteractive \
 		apt-get -y install default-jre-headless \
 	&& \
-	apt-get clean
+	apt-get clean && \
+	rm -rf /var/lib/apt/lists/*
