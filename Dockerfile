@@ -1,4 +1,4 @@
-FROM pataquets/ubuntu
+FROM pataquets/ubuntu:trusty
 
 RUN \
 	apt-get update && \
